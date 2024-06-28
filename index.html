@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Weather App</title>
+  </head>
+  <body>
+    <main class="min-vh-100 py-5">
+      <div class="container">
+        <div class="text-center mb-3">
+          <img class="mb-3" src="imgs/logo.png" alt="Weather Logo" />
+          <h1 class="text-custom-blue fw-bold">Weather App</h1>
+        </div>
+        <div class="row mb-4">
+          <div class="col-md-8 offset-md-2">
+            <div
+              class="rounded-pill d-flex mx-auto bg-white bg-opacity-50 blur p-2 shadow-sm"
+            >
+              <input
+                type="text"
+                class="form-control bg-transparent border-0"
+                id="location-input"
+                placeholder="Find Your Location"
+              />
+              <button
+                id="find-btn"
+                class="btn btn-custom-blue rounded-pill px-4"
+                type="submit"
+              >
+                Find
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="row gy-4" id="weather-container">
+        </div>
+      </div>
+    </main>
+    <script src="js/script.js"></script>
+  </body>
+</html>

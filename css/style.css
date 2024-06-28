@@ -1,0 +1,36 @@
+:root {
+  --custom-blue-rgb: 3, 159, 217;
+}
+::selection {
+  background: rgb(var(--custom-blue-rgb));
+  color: var(--bs-white);
+}
+main {
+  background: url(../imgs/bg.jpg) center / cover no-repeat;
+}
+.form-control:focus {
+  box-shadow: none;
+}
+.text-custom-blue {
+  --bs-text-opacity: 1;
+  color: rgba(var(--custom-blue-rgb), var(--bs-text-opacity)) !important;
+}
+.btn-custom-blue {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: rgb(var(--custom-blue-rgb));
+  --bs-btn-border-color: rgb(var(--custom-blue-rgb));
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: rgba(var(--custom-blue-rgb), 0.8);
+  --bs-btn-hover-border-color: rgba(var(--custom-blue-rgb), 0.8);
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: rgb(var(--custom-blue-rgb));
+  --bs-btn-active-border-color: rgb(var(--custom-blue-rgb));
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+}
+.border-custom-blue {
+  --bs-border-opacity: 1;
+  border-color: rgba(var(--custom-blue-rgb), var(--bs-border-opacity)) !important;
+}
+.blur {
+  backdrop-filter: blur(10px)
+}
